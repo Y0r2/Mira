@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Mira Luxury Fragrances</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="Mira Logo" class="logo">
+        <span class="site-name">Mira</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Order Intro Section -->
+  <section class="order-intro">
+    <h2>GET IN TOUCH WITH US</h2>
+    <h1>At <em>Mira</em>, We Want You To Find Your Perfect Scent!</h1>
+  </section>
+
+  <!-- Order Form Section -->
+  <section class="order-section">
+    <div class="order-info">
+      <h2>Order Here!</h2>
+      <p>To help us get it just right, please let us know:</p>
+      <ul>
+        <li><strong>Scent Style:</strong> Do you love floral, woody, oriental, or citrus notes?</li>
+        <li><strong>Strength:</strong> Do you prefer a light, subtle fragrance or something bold and long-lasting?</li>
+        <li><strong>Purpose:</strong> Is it for a special event, daily use, or a gift?</li>
+      </ul>
+      <p>These details help us create the ideal fragrance experience for you.</p>
+    </div>
+    
+    <div class="order-form">
+      <form onsubmit="return showSuccessMessage()" action="#" method="post">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your preferences or any additional details..." required></textarea>
+  
+        <button type="submit" class="submit-button">Submit Form</button>
+      </form>
+    </div>
+  </section>
+  
+  <script>
+    function showSuccessMessage() {
+      alert("Your order has been successfully received. Check your email for confirmation!");
+      return false; // Prevents actual form submission for demonstration
+    }
+</script>
+<section class="contact-info">
+  <div class="contact-card">
+    <div class="contact-icon">
+      <img src="icons/number.png" alt="Phone Icon">
+    </div>
+    <h3>PHONE</h3>
+    <p>+996 5050505</p>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">
+      <img src="icons/emil.png" alt="Email Icon">
+    </div>
+    <h3>EMAIL</h3>
+    <p>Mira@gmail.com</p>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">
+      <img src="icons/adrs.png" alt="Address Icon">
+    </div>
+    <h3>ADDRESS</h3>
+    <p>Saudi Arabia - Jazan</p>
+  </div>
+</section>
+
+  
+  
+</body>
+</html>
